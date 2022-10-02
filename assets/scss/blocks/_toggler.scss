@@ -1,0 +1,24 @@
+.toggler {
+    display: none;
+    flex-shrink: 0;
+}
+.toggler__line {
+    width: 24px;
+    height: 2px;
+    display: block;
+    background-color: #000;
+    transition: all 0.4s;
+}
+.toggler__line-top {
+    margin-bottom: 6px;
+}
+.toggler__line-center {
+    margin-bottom: 6px;
+}
+.toggler__line-bottom {
+}
+@include breakpoint-down(550px) {
+    .toggler {
+        display: block;
+    }
+}

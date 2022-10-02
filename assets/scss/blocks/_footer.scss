@@ -1,0 +1,39 @@
+.footer {
+    padding: 30px 0;
+    border-top: 1px solid #E8E8E8;
+}
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__text {
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 16px;
+}
+.footer__logo {
+    font-weight: 700;
+}
+.footer__sm-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.footer__sm-item {
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.footer__sm-item-link {
+}
+.footer__sm-item-img {
+    display: block;
+}
+@include breakpoint-down(550px) {
+    .footer__container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
